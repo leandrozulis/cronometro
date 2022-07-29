@@ -1,0 +1,92 @@
+:root {
+  --primary-color: rgb(17,86,102);
+  --primary-color-darker: rgb(9,48,56);
+  --primary-color-white: rgb(255, 255, 255);
+  --primary-color-blue: rgb(121, 190, 204);
+  --primary-color-red: rgb(247, 127, 127);
+  --primary-color-red-darker: rgb(255, 0, 0);
+  --primary-color-green: rgb(7, 97, 7);
+  --primary-color-green-lite: rgb(83, 168, 83);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body{
+  margin: 0;
+  padding: 20px;
+  background: var(--primary-color-darker);
+  font-family: 'Open sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.relogio {
+  font-size: 3em;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  color: var(--primary-color-white);
+  padding: 20px 10px;
+  margin: 20px auto;
+}
+
+.pausado {
+  background-color: var(--primary-color-red);
+  border: var(--primary-color-red);
+  color: red;
+}
+
+.centralizar{
+  max-width: 260px;
+  margin: 30px auto;
+}
+
+h1 { 
+  max-width: 180px;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: underline;
+  margin-left: 50px;
+}
+
+.iniciar, .pausar, .zerar {
+  border: 1px solid var(--primary-color-blue);
+  background-color: var(--primary-color-blue);
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 20px 20px;
+  cursor: pointer;
+}
+
+.texto {
+  text-align: center;
+}
+
+.stop {
+  color: var(--primary-color-red-darker);
+}
+
+.start {
+  color: var(--primary-color-green);
+}
+
+.background-start{
+  background-color: var(--primary-color-green-lite);
+  border: var(--primary-color-green-lite);
+}
+
+.stop, .start {
+  font-size: 2em;
+  font-weight: bold;
+}
